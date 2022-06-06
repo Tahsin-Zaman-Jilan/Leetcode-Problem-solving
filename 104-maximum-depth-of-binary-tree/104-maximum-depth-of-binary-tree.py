@@ -10,4 +10,21 @@ class Solution:
         if root is None:
             return 0
         
-        return 1+ max(self.maxDepth(root.left) ,self.maxDepth(root.right)) 
+        level=0
+        que=deque([root])
+        while que:
+            
+            for i in range(len(que)):
+                node=que.popleft()
+                
+                if node.left:
+                    que.append(node.left )
+                if node.right :
+                     que.append(node.right )
+            
+            level+=1
+        return level   
+            
+            
+            
+        
