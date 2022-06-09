@@ -12,11 +12,11 @@ public:
         for(int i=0;i<len-1;i++){
             
             int ans=pq.top();
-            cout<<ans<<endl;
+           // cout<<ans<<endl;
             pq.pop();
             int ans1=pq.top();
              pq.pop();
-            cout<<ans1<<endl;
+            //cout<<ans1<<endl;
             maxm=abs(ans-ans1);
             pq.push(maxm);
             
