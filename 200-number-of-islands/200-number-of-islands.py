@@ -15,6 +15,7 @@ class Solution:
             q.append((r,c))
             
             while q:
+                #way to make dfs is remove pop left and use just pop 
                 row,col=q.popleft()
                 directions=[[0,1],[0,-1],[1,0],[-1,0]]
                 
